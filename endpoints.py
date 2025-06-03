@@ -1,4 +1,4 @@
-class EndPoints:
+class Endpoints:
 
     CREATE_COURIER_EP = '/api/v1/courier'
     LOGIN_COURIER_EP = '/api/v1/courier/login'
