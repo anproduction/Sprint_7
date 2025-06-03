@@ -37,7 +37,10 @@
 ## Генерация отчёта Allure:
 
 Запуск тестов с сохранением результатов для Allure:
-   ``` pytest --alluredir=allure-results ```
+``` pytest --alluredir=allure_results ```
+
+Запуск allure-отчета:
+``` allure serve allure_results```
 
 
 ## Что покрывают тесты:

@@ -15,8 +15,6 @@ def generate_unique_user():
         "firstName": gen()
     }
 
-def create_and_register_courier():
-    user = generate_unique_user()
-    response = requests.post(BASE_URL + Endpoints.CREATE_COURIER_EP, json=user)
-    assert response.status_code == 201
-    return {"login": user["login"], "password": user["password"]}
+def delete_courier(courier_id):
+    response = requests.delete(BASE_URL + Endpoints.DELETE_COURIER_EP.format(id=courier_id))
+    return response
